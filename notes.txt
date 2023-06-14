@@ -1,0 +1,119 @@
+In this capstone project, a simple Automobile Insurance Policy and Claims Administration system (PAS) will be created to manage customer automobile insurance policies and as well as accident claims for an insurance company.
+
+An insurance company customer can buy one or more Automobile Policies.
+Before a customer can buy a policy, an account must be created for the customer. The customer’s account then contains all of the customers policies.
+
+The Automobile Insurance Policy and Claims Administration System (PAS) Specification.
+
+Minimum requirements of the PAS system are as follows:
+
+    Allow new accounts to be created for new customers
+    Allow application for new policies to be created and added to the purchasing customer’s account:
+    each policy must be linked to a new or existing policyholder
+    during policy creation, more than one vehicle can be added to the policy; however, a vehicle can only be on one policy.
+    Allow adding of a new claim against a specific policy in the case of an accident
+    After creation of new policy applications, allow the new policies to be rated and a premium (price) calculated. The calculation of the premium is based on a calculation detailed in the Policy Rating Algorithm section below.
+
+The PAS system should use a console-based UI which should provide a menu of options:
+
+    Create a new Customer Account
+    Get a policy quote and buy the policy.
+    Cancel a specific policy (i.e change the expiration date of a policy to an earlier date than originally specified)
+    File an accident claim against a policy. All claims must be maintained by system and should be searchable.
+    Search for a Customer account
+    Search for and display a specific policy
+    Search for and display a specific claim
+    Exit the PAS System
+
+
+The PAS System top-level algorithm:
+
+        Display a menu of options.
+
+        Prompt the user for a menu choice.
+        For option #2, prompt the user for the account number of the account containing the relevant policy – a customer account must exist before policy purchase.
+        For option #3, #4, and #6, prompt the user for the specific policy number.
+        For option #5, prompt the user for the first name and last name of the customer to search for (For now we will assume customer names are unique).
+        For option #7, prompt the user for the specific claim number needed.
+        Once the user selects an option, perform the action requested by the user on the identified account or policy.
+        Repeat steps 1 through 7 until the user has selected the option to exit.
+
+
+The Policy Rating algorithm i.e. premium calculation:
+When quoting a price for a Policy, the PAS system must utilize a rating engine which will calculate the premium for each vehicle in a policy as follows:
+
+    P (premium) = (vp x vpf) + ((vp/100)/dlx)
+    P = calculated premium
+    vp = vehicle purchase price
+    vpf = vehicle price factor
+    dlx = num of years since driver license was first issued
+    The vehicle price factor (vpf) must be looked up from the following table which must be used by the Rating Engine:
+    Vehicle Age is less than (yrs)
+    Vehicle Price factor
+
+            1-1.0%
+            3-0.8%
+            5-0.7%
+            10-0.6%
+            15-0.4%
+            20-0.2%
+            40-0.1%
+
+The Rating engine will select the highest factor for the vehicle age matches.
+
+
+PAS System Code Design
+
+The PAS system can be modeled with a PASApp object, CustomerAccount objects, Policy objects, PolicyHolder objects, Vehicle objects, Claim objects, and one Rating Engine object.
+
+Each Customer Account must have the following information:
+
+    A unique numeric 4-digit account number
+    The account owner (first name, last name, and address)
+    A list of policies owned by that account
+    A list of policy holders associated with the policies in the account
+
+
+Each Policy must have the following information associated with it:
+
+    a unique 6-digit numeric policy number.
+    The Effective Date of the policy coverage
+    The Expiration Date of the policy coverage (In this simple case, this PAS system will only support 6 month policy terms which means the expiration date is automatically calculated and set to be 6 months exactly from the given customer-selected effective date)
+    a Policy Holder i.e. the person/driver covered by the policy – in this simple case, this will usually also be the customer but you must be ready to handle the scenario in which the PolicyHolder is different from the Account owner – for example, the PolicyHolder could be the child or the spouse of the customer.
+    one or more Vehicles that are insured by the policy
+    the system derived policy premium (cost for policy to be paid by customer)
+
+Each Policy Holder must have the following information associated with it:
+
+    First name and last name
+    Date of birth
+    Address
+    Driver’s license number
+    Date on which driver’s license was first issued.
+
+Each Vehicle must have the following information associated with it:
+
+        Make e.g. Toyota, Ford, BMW, e.t.c
+        Model
+        Year
+        Type – 4-door sedan, 2-door sports car, SUV, or truck
+        Fuel Type – Diesel, Electric, Petrol
+        Purchase Price (Assume all cars are bought brand new)
+        Color
+        Premium charged for this specific vehicle
+
+Each Accident Claim must have the following information associated with it:
+
+        A unique 6-digit alphanumeric Claim number in the following format “Cxxxxx” where x = a number from 0 to 9
+        Date of accident
+        Address where accident happened
+        Description of accident
+        Description of damage to vehicle
+        Estimated cost of repairs
+
+The Rating Engine object will have one and only one responsibility:
+
+        to take a policy,
+        iterate over all the vehicles within it,
+         calculate the premium for each vehicle,
+         add them all up and set the total policy premium on the policy object.
