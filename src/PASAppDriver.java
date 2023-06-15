@@ -24,6 +24,7 @@ public class PASAppDriver {
                     int acct = input.nextInt();
                     if(app.isAccountExisting(acct)){
                         app.searchAccountNumber(acct);
+                        app.quotePolicy(acct);
                     } else {
                         System.out.println("Create account first!\n");
                     }

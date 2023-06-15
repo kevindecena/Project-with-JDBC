@@ -1,4 +1,6 @@
+import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -11,6 +13,11 @@ public class PASApp {
     Scanner input = new Scanner(System.in);
 
     List<CustomerAccount> accountsList = new ArrayList<>();
+    List<Policy> policyList = new ArrayList<>();
+    List<PolicyHolder> policyHolderList = new ArrayList<>();
+    List<Vehicle> vehicleList = new ArrayList<>();
+    List<Claim> claimList = new ArrayList<>();
+
 
 
 
@@ -66,6 +73,42 @@ public class PASApp {
            }
         }
         return false;
+    }
+
+    public void quotePolicy(int accountNumber){
+
+
+
+        Policy policy = new Policy();
+
+        System.out.println("Enter ");
+
+    }
+
+    public void addPolicyHolder(int accountNumber){
+
+        System.out.println("Enter first name of policy holder: ");
+        String firstName = input.nextLine();
+
+        System.out.println("Enter last name of policy holder: ");
+        String lastName = input.nextLine();
+
+        System.out.println("Enter address of policy holder: ");
+        String address = input.nextLine();
+
+        System.out.println("Enter driver's license number of policy holder: ");
+        String driversLicenseNumber = input.nextLine();
+
+        System.out.println("Enter date of birth of policy holder: ");
+        int dateOfBirth = input.nextInt();
+
+        System.out.println("Enter date of DL issuance of policy holder: ");
+        int licenseIssuanceDate = input.nextInt();
+
+        PolicyHolder policyHolder = new PolicyHolder(accountNumber,firstName, lastName, address, driversLicenseNumber, dateOfBirth, licenseIssuanceDate );
+
+        policyHolderList.add(policyHolder);
+
     }
 
 
