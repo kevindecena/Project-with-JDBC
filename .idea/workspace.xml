@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47af08e2-d04d-48ba-ac99-2a916649770b" name="Changes" comment="added Policy, policy holder, vehicle and claim classes">
+    <list default="true" id="47af08e2-d04d-48ba-ac99-2a916649770b" name="Changes" comment="added addPolicyHolder function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PASApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PASApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PASAppDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PASAppDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Policy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Policy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PolicyHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PolicyHolder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +36,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/KevinDecena/IdeaProjects/Capstone with JDBC"
+    "last_opened_file_path": "C:/Users/KevinDecena/IdeaProjects/practice codes/ReverseString"
   }
 }]]></component>
   <component name="RunManager">
@@ -80,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686792621679</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added addPolicyHolder function">
+      <created>1686795354593</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686795354593</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +101,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="added account search function" />
     <MESSAGE value="added Policy, policy holder, vehicle and claim classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Policy, policy holder, vehicle and claim classes" />
+    <MESSAGE value="added addPolicyHolder function" />
+    <option name="LAST_COMMIT_MESSAGE" value="added addPolicyHolder function" />
   </component>
 </project>
