@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47af08e2-d04d-48ba-ac99-2a916649770b" name="Changes" comment="added addPolicyHolder function">
+    <list default="true" id="47af08e2-d04d-48ba-ac99-2a916649770b" name="Changes" comment="added few functions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PASAppDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PASAppDriver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +37,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/KevinDecena/IdeaProjects/practice codes/ReverseString"
+    "last_opened_file_path": "C:/Users/KevinDecena/IdeaProjects/Capstone with JDBC"
   }
 }]]></component>
   <component name="RunManager">
@@ -83,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686795354593</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added few functions">
+      <created>1687848428965</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687848428965</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,6 +110,7 @@
     <MESSAGE value="added account search function" />
     <MESSAGE value="added Policy, policy holder, vehicle and claim classes" />
     <MESSAGE value="added addPolicyHolder function" />
-    <option name="LAST_COMMIT_MESSAGE" value="added addPolicyHolder function" />
+    <MESSAGE value="added few functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="added few functions" />
   </component>
 </project>

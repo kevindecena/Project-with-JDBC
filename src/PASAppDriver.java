@@ -31,6 +31,8 @@ public class PASAppDriver {
 
 
                 case 3://Cancel a specific policy
+                    System.out.println("Enter policy number for cancellation: ");
+
 
                 case 4:// File an accident claim against a policy. All claims must be maintained by system and should be searchable.
 
