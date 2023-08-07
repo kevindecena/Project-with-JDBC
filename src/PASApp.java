@@ -77,13 +77,8 @@ public class PASApp {
     }
 
     public void quotePolicy(int accountNumber){
-
-
-
         Policy policy = new Policy();
-
         System.out.println("Enter ");
-
     }
 
     public void addPolicyHolder(int accountNumber){
