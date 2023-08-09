@@ -45,7 +45,6 @@ public class PASAppDriver {
 
                 case 8://Exit the PAS System
 
-
             }
 
         }while(option != 8);

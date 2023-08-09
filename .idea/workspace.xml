@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47af08e2-d04d-48ba-ac99-2a916649770b" name="Changes" comment="added few functions">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="47af08e2-d04d-48ba-ac99-2a916649770b" name="Changes" comment="refactored">
+      <change beforePath="$PROJECT_DIR$/src/PASApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PASApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PASAppDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PASAppDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Policy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Policy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +106,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690856401529</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactored">
+      <created>1691372145715</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691372145715</updated>
+    </task>
+    <task id="LOCAL-00008" summary="refactored">
+      <created>1691372185899</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691372185899</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,6 +140,7 @@
     <MESSAGE value="added Policy, policy holder, vehicle and claim classes" />
     <MESSAGE value="added addPolicyHolder function" />
     <MESSAGE value="added few functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="added few functions" />
+    <MESSAGE value="refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored" />
   </component>
 </project>
