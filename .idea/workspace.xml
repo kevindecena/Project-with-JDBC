@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47af08e2-d04d-48ba-ac99-2a916649770b" name="Changes" comment="refactored">
-      <change beforePath="$PROJECT_DIR$/src/PASApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PASApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PASAppDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PASAppDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Policy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Policy.java" afterDir="false" />
-    </list>
+    <list default="true" id="47af08e2-d04d-48ba-ac99-2a916649770b" name="Changes" comment="refactored" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691372185899</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="refactored">
+      <created>1692062517655</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1692062517655</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
